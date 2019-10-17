@@ -1,0 +1,16 @@
+<h1>All Issues</h1>
+
+<a href="/issue/new">
+    <button>
+        Add New Issue
+    </button>
+</a>
+
+<ol>
+    {{#each allIssues}}
+        <a href="/issue/{{_id}}"><h2>{{name}}</h2></a>
+        <p>Created On {{createdAt}}</p>
+        <p>Status: {{status}}</p>
+        <p>Priority: {{priority}}</p>
+    {{/each}}
+</ol>
